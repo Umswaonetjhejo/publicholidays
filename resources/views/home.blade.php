@@ -33,7 +33,7 @@
         </nav>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <form class="form-inline" method="POST" action="/home">
                     @csrf
 
@@ -56,6 +56,10 @@
 
                     <button class="btn btn-success">Fetch Holidays</button>
                 </form>
+            </div>
+
+            <div class="col-md-6">
+                <a href="{{ URL::to('/downloadpdf') }}" class="btn btn-primary">Download</a>
             </div>
         </div>
         <br>

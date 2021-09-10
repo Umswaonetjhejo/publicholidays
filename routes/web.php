@@ -20,3 +20,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 
 Route::post('/home', 'App\Http\Controllers\HomeController@fetchHolidays');
+
+Route::get('/downloadpdf', 'App\Http\Controllers\HomeController@downloadpdf');
